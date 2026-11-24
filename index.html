@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bibing, plataforma web para descubrir planes y eventos en Cali." />
+    <title>Bibing | Planes que pasan cerca</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Bibing, inicio"><span class="brand-mark">b</span>ibing</a>
+      <nav aria-label="Navegación principal">
+        <a class="active" href="index.html">Inicio</a><a href="explorar.html">Explorar</a><a href="mis-eventos.html">Mis eventos</a>
+      </nav>
+      <a class="button button-small" href="crear-evento.html">Publicar evento</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Cali se mueve todos los días</p>
+          <h1>Encuentra un plan que sí te quede cerca.</h1>
+          <p class="lead">Bibing reúne eventos culturales, deportivos y gastronómicos en un solo lugar para que descubras qué hacer sin perder tiempo buscando en muchas redes.</p>
+          <form class="search-card" data-search-form>
+            <label for="home-search">¿Qué plan estás buscando?</label>
+            <div class="search-row"><input id="home-search" name="query" type="search" placeholder="Ejemplo: música, feria, cine" /><button class="button" type="submit">Buscar planes</button></div>
+          </form>
+          <div class="hero-notes"><span><strong>26</strong> planes esta semana</span><span><strong>5</strong> zonas de Cali</span></div>
+        </div>
+        <div class="hero-visual">
+          <img src="cali-night.svg" alt="Ilustración de una noche de eventos en Cali" />
+          <div class="floating-card first"><span class="dot coral"></span><strong>Hoy, 7:00 p. m.</strong><br />Salsa al parque</div>
+          <div class="floating-card second"><span class="dot mint"></span><strong>A 12 minutos</strong><br />San Antonio</div>
+        </div>
+      </section>
+
+      <section class="section section-pale">
+        <div class="section-heading"><div><p class="eyebrow">Para esta semana</p><h2>Planes que están sonando</h2></div><a class="text-link" href="explorar.html">Ver todos los eventos <span>→</span></a></div>
+        <div class="event-grid" data-featured-events></div>
+      </section>
+
+      <section class="planning-band">
+        <div><p class="eyebrow">Antes de salir</p><h2>Una agenda simple para organizar el fin de semana</h2><p>Además de guardar eventos, puedes revisar las horas principales y comparar opciones de forma rápida.</p><ul><li>Los eventos indican zona, precio y horario.</li><li>La asistencia se confirma desde la ficha del evento.</li><li>La agenda se conserva en este navegador.</li></ul></div>
+        <table><thead><tr><th>Momento</th><th>Plan recomendado</th></tr></thead><tbody><tr><td>Mañana</td><td>Ruta en bici por el río</td></tr><tr><td>Tarde</td><td>Feria de café y diseño</td></tr><tr><td>Noche</td><td>Salsa al parque</td></tr></tbody></table>
+      </section>
+
+      <section class="how-it-works">
+        <div><p class="eyebrow">Una búsqueda menos complicada</p><h2>Todo lo importante antes de salir</h2></div>
+        <ol class="steps"><li><span>01</span><h3>Explora</h3><p>Busca por categoría, fecha o zona.</p></li><li><span>02</span><h3>Compara</h3><p>Revisa horarios, precio y ubicación.</p></li><li><span>03</span><h3>Guarda</h3><p>Arma tu lista de próximos planes.</p></li></ol>
+      </section>
+
+      <section class="audio-callout">
+        <div><p class="eyebrow">Un momento para decidir</p><h2>Activa el ambiente y elige tu próximo plan.</h2><p>Este botón reproduce una señal breve generada por el sitio. No requiere descargar ningún archivo.</p></div>
+        <button class="button button-light" type="button" data-sound-button>Escuchar ambiente</button>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">b</span>ibing</a><p>Proyecto académico de aplicación web. Información de eventos usada con fines demostrativos.</p><a href="como-funciona.html">¿Cómo funciona?</a></footer>
+  </body>
+</html>
